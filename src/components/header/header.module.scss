@@ -1,0 +1,37 @@
+@import '../../styles/vars.module.scss';
+
+.header {
+    .langSelect {
+
+        // background-color: red;
+        div {
+            padding: 2px 40px 2px 15px !important;
+        }
+
+        fieldset {
+            border: unset !important;
+        }
+    }
+
+    .quickLink {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .megaMenu {
+
+        display: none;
+        box-shadow: 0px 4px 14px #00000014;
+        padding: 36px 46px;
+
+        z-index: 512;
+
+        &.show {
+            display: block;
+        }
+    }
+}

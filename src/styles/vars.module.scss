@@ -1,0 +1,47 @@
+$black: #2B3445;
+$lightRed: #FFF6F6;
+$red: #EB1C23;
+$darkRed: #D60D14;
+$green: #27AE60;
+$yellow: #FAAF00;
+$purple: #8e44ad;
+$extraDarkGray: #4C4C4C;
+$darkGray: #999999;
+$gray: #C4C4C4;
+$lightGray: #E0E0E0;
+$extraLightGray: #F5F5F5;
+$radius: 6px;
+$shadow: 0px 3px 30px #0000001A;
+$white: #ffffff;
+
+$extraLightBlue: #F5F8FB;
+$darkBlue: #27325E;
+$primary: #17468F;
+$secondary: #FADF06;
+$hoverColor: #143E7D;
+$backGround: #F8FAFD;
+
+:export {
+    black: $black;
+    white: $white;
+    lightRed: $lightRed;
+    red: $red;
+    darkRed: $darkRed;
+    green: $green;
+    yellow: $yellow;
+    purple: $purple;
+    extraDarkGray: $extraDarkGray;
+    darkGray: $darkGray;
+    gray: $gray;
+    lightGray: $lightGray;
+    extraLightGray: $extraLightGray;
+    radius: $radius;
+    shadow: $shadow;
+
+    extraLightBlue: $extraLightBlue;
+    darkBlue: $darkBlue;
+    primary: $primary;
+    secondary: $secondary;
+    hoverColor: $hoverColor;
+    backGround: $backGround;
+}
