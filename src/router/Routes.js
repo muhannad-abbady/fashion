@@ -7,7 +7,7 @@ import CustomMetas from '../components/custom-metas'
 // import default_image from '../media/images/default_image.jpg'
 
 const Homepage = lazy(() => import("../pages/homepage"))
-const SearchPage = lazy(() => import("../pages/search-page"))
+const PP = lazy(() => import("../pages/pp"))
 
 
 
@@ -38,8 +38,7 @@ const Router = () => {
                     <ScrollToTop />
                     <Routes>
                         <Route path='/' element={<Homepage />} />
-                        <Route path='/' element={<Homepage />} />
-                        <Route path='/search.html' element={<SearchPage />} />
+                        <Route path='/:id' element={<PP />} />
                     </Routes>
                 </Suspense>
             </main>

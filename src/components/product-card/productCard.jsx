@@ -6,9 +6,8 @@ import styles from './productCard.module.scss'
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
-    console.log(product)
     return (
-        <Link to={`/${product.id}`} >
+        <Link to={`/${product?.id}`} >
             <Box className={"product-card " + styles.productCard} borderRadius={cssVars.radius}
                 sx={{
                     border: { md: `1px solid ${cssVars.lightGray}` },

@@ -52,7 +52,7 @@ const MenuDrawer = ({ open, setOpen }) => {
                 {
                     currMenu.map(cat =>
                         <Box key={cat.title} borderBottom={`2px solid ${cssVars.extraLightGray}`} py="16px" sx={{ ":hover": { color: cssVars.red } }}>
-                            <Link to={cat.url} style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                            <Link to="#" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                                 {cat.name}
                                 {cat?.children?.length > 0 ? <ArrowForwardIosIcon sx={{ fontSize: "12px" }} /> : null}
                             </Link>

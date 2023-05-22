@@ -17,23 +17,6 @@ const ProductCardBottom = ({ product }) => {
     const [addToCartLoading, setAddToCartLoading] = useState(false)
     const { enqueueSnackbar } = useSnackbar()
 
-    const addToCart = (e, sku) => {
-        e.preventDefault();
-        // setAddToCartLoading(true)
-        // addProductsToCart({
-        //     variables: { cartId: cart.id, sku, quantity: 1 },
-        //     onCompleted: (data) => {
-        //         setAddToCartLoading(false)
-        //         if (data) {
-        //             openMiniCart()
-        //         }
-        //     },
-        //     onError: (err) => {
-        //         enqueueSnackbar(err.message, { variant: 'error' })
-        //         setAddToCartLoading(false)
-        //     }
-        // })
-    }
 
     return (
         <Box sx={{ position: "relative", fontSize: { xs: "3.7vw", sm: "100%" }, width: "100%" }}>
@@ -44,11 +27,11 @@ const ProductCardBottom = ({ product }) => {
                 display="flex" justifyContent="space-between"
             >
                 <Box maxWidth={150} className={"primary fw-500 "} sx={{ display: "-webkit-box", "-webkit-line-clamp": "" }}>
-                    {product.category}
+                    {product?.category}
                 </Box>
             </Grid>
-            <Rating sx={{ mb: { xs: "0px", md: "0px" } }} size={"small"} name="read-only" value={product.rating.rate} readOnly precision={0.1} />
-            <Box my={{ xs: 1, md: 2 }} className={styles.name} height={{ sm: 48 }}>{product.title}</Box>
+            <Rating sx={{ mb: { xs: "0px", md: "0px" } }} size={"small"} name="read-only" value={product?.rating.rate} readOnly precision={0.1} />
+            <Box my={{ xs: 1, md: 2 }} className={styles.name} height={{ sm: 48 }}>{product?.title}</Box>
             <Grid my={{ xs: 1, md: 2 }} display="flex" alignItems="center" justifyContent="space-between">
                 <PriceBox product={product} sx={{ fontSize: { xs: "14px", md: "15px" } }} />
                 <StockStatus product={product} />

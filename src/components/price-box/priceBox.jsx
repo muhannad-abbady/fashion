@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import useAddZeroes from "../../hooks/useAddZeroes";
 
 const PriceBox = ({ product, variant = "plp", sx }) => {
-    const price = product.price;
+    const price = product?.price;
     const old_price = null;
 
     const { z } = useAddZeroes()

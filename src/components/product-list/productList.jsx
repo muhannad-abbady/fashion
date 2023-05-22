@@ -5,10 +5,10 @@ const ProductList = ({ products, category_path }) => {
 
     return (
         <Box className="products-list" mt={2} mb={5}>
-            <Grid container rowSpacing={{ xs: "45px", sm: "30px" }} columnSpacing={{ xs: "16px", sm: "30px" }} columns={{ xs: 2, md: 3, xl: 4 }}>
+            <Grid container rowSpacing={{ xs: "45px", sm: "30px" }} columnSpacing={{ xs: "16px", sm: "30px" }} columns={{ xs: 2, md: 4, xl: 5 }}>
                 {
                     products.map((product) =>
-                        <Grid item xs={1} key={product.sku}>
+                        <Grid item xs={1} key={product?.id}>
                             <ProductCard product={product} category_path={category_path} />
                         </Grid>
                     )

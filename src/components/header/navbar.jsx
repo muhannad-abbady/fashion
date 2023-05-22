@@ -14,43 +14,16 @@ const Navbar = () => {
     const [openedCat, setOpenedCat] = useState("")
     const [activeImage, setActiveImage] = useState("")
 
-    useEffect(() => {
-        setHeaderCats(JSON.parse(localStorage.getItem('headerCats')) || [])
-    }, [])
-
-    useEffect(() => {
-        if (data) {
-            setHeaderCats(data)
-        }
-    }, [data])
 
     const openMenu = (e, cat) => {
-        if (cat?.children?.length > 0) {
-            const temp = cat.children.filter(cat => cat.include_in_menu)
-            setSubCats(temp)
-            setOpenedCat(cat.name)
-            setImageOnHover(cat)
-            document.getElementById(e.target.id + 'navDropDownMenu').classList.add(styles.show)
-        }
+
     }
 
     const closeMenu = (e) => {
-        const condition = [document.getElementById('navDropDownMenu'), ...document.querySelectorAll('#nav-list li a')].indexOf(e.relatedTarget) > -1
-        if (!condition) {
-            document.getElementById('navDropDownMenu').classList.remove(styles.show)
-            setOpenedCat("")
-        }
+
     }
 
     const setImageOnHover = (cat) => {
-        let img = ""
-        if (cat?.thumbnail || cat?.image) {
-            img = cat?.thumbnail ? (process.env.NEXT_PUBLIC_BASE_URL + cat?.thumbnail) : cat?.image
-        }
-        else if ('children' in cat && (cat.children[0]?.thumbnail || cat.children[0]?.image)) {
-            img = cat.children[0]?.thumbnail ? (process.env.NEXT_PUBLIC_BASE_URL + cat.children[0]?.thumbnail) : cat.children[0]?.image
-        }
-        setActiveImage(img)
     }
 
     return (

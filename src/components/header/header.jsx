@@ -3,14 +3,15 @@ import { useContext, useEffect, useRef, useState } from "react"
 import { Box, ClickAwayListener, Container, FormControl, Grid, IconButton, InputAdornment, OutlinedInput, Popper } from "@mui/material"
 import TopBar from "./topbar"
 import styles from './header.module.scss'
-import logo from "../../media/logo.jpg"
 import cssVars from "../../styles/vars.module.scss"
 import SearchIcon from '@mui/icons-material/Search';
 import QuickLinks from "./quicklinks"
 import Navbar from "./navbar"
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuDrawer from "./menuDrawer"
-import { useNavigate } from "react-router-dom"
+import logo from "./logo.jpg"
+import { Link } from "react-router-dom"
+// import { useNavigate } from "react-router-dom"
 
 const Header = () => {
 
@@ -29,21 +30,21 @@ const Header = () => {
 
     const srchRef = useRef()
 
-    const navigate = useNavigate()
+    //const navigate = useNavigate()
 
-    const [search, setSearch] = useContext('')
+    const [search, setSearch] = useState('')
 
     const [openMenu, setOpenMenu] = useState(false)
 
     return (
         <Box className={styles.header} pb="6px" sx={{ borderBottom: { xs: `1px solid ${cssVars.lightGray}`, lg: `2px solid ${cssVars.extraLightGray}` } }}>
-            {/* <TopBar /> */}
-            {/* <Container maxWidth="xl" sx={{ my: { xs: 1, lg: 3 }, pt: { xs: "6px", lg: 0 } }} >
+            <TopBar />
+            <Container maxWidth="xl" sx={{ my: { xs: 1, lg: 3 }, pt: { xs: "6px", lg: 0 } }} >
                 <Grid container columns={{ xs: 11, lg: 131 }} alignItems="center">
                     <Grid item xs={6} lg={36} display="flex">
                         <MenuIcon sx={{ display: { lg: "none" }, fontSize: 30, mb: 1, mr: "18px" }} onClick={() => { setOpenMenu(true) }} />
                         <MenuDrawer open={openMenu} setOpen={setOpenMenu} />
-                        <img scr={logo} alt="Logo" />
+                        <Link to="/"><img src={logo} alt="Logo" style={{ height: "75px" }} /></Link>
                     </Grid>
                     <Grid item lg={59} sx={{ display: { xs: "none", lg: "block" } }} position="relative">
                         <ClickAwayListener onClickAway={() => { setAnchorEl(null) }}>
@@ -100,7 +101,7 @@ const Header = () => {
                         <QuickLinks />
                     </Grid>
                 </Grid>
-            </Container> */}
+            </Container>
             <Box sx={{ display: { xs: "none", lg: "block" } }}>
                 {/* <Navbar /> */}
             </Box>
