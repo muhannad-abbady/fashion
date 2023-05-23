@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a5b2d6e.css",
-    "main.js": "/static/js/main.d4d81c92.js",
-    "static/css/672.a7c65c38.chunk.css": "/static/css/672.a7c65c38.chunk.css",
-    "static/js/672.8a7835cc.chunk.js": "/static/js/672.8a7835cc.chunk.js",
-    "static/js/903.2d8f6ca9.chunk.js": "/static/js/903.2d8f6ca9.chunk.js",
-    "static/js/497.e5cfc96c.chunk.js": "/static/js/497.e5cfc96c.chunk.js",
-    "static/js/898.e019a85a.chunk.js": "/static/js/898.e019a85a.chunk.js",
-    "static/media/warning2.jpg": "/static/media/warning2.e48a78d946969d729eac.jpg",
-    "static/media/warning1.jpg": "/static/media/warning1.68149223463ce98c7356.jpg",
-    "static/media/logo.jpg": "/static/media/logo.878069e41183927ac8f5.jpg",
-    "index.html": "/index.html",
-    "main.8a5b2d6e.css.map": "/static/css/main.8a5b2d6e.css.map",
-    "main.d4d81c92.js.map": "/static/js/main.d4d81c92.js.map",
-    "672.a7c65c38.chunk.css.map": "/static/css/672.a7c65c38.chunk.css.map",
-    "672.8a7835cc.chunk.js.map": "/static/js/672.8a7835cc.chunk.js.map",
-    "903.2d8f6ca9.chunk.js.map": "/static/js/903.2d8f6ca9.chunk.js.map",
-    "497.e5cfc96c.chunk.js.map": "/static/js/497.e5cfc96c.chunk.js.map",
-    "898.e019a85a.chunk.js.map": "/static/js/898.e019a85a.chunk.js.map"
+    "main.css": "/fashion/static/css/main.8a5b2d6e.css",
+    "main.js": "/fashion/static/js/main.4b914b56.js",
+    "static/css/672.a7c65c38.chunk.css": "/fashion/static/css/672.a7c65c38.chunk.css",
+    "static/js/672.8a7835cc.chunk.js": "/fashion/static/js/672.8a7835cc.chunk.js",
+    "static/js/903.2d8f6ca9.chunk.js": "/fashion/static/js/903.2d8f6ca9.chunk.js",
+    "static/js/497.e5cfc96c.chunk.js": "/fashion/static/js/497.e5cfc96c.chunk.js",
+    "static/js/898.e019a85a.chunk.js": "/fashion/static/js/898.e019a85a.chunk.js",
+    "static/media/warning2.jpg": "/fashion/static/media/warning2.e48a78d946969d729eac.jpg",
+    "static/media/warning1.jpg": "/fashion/static/media/warning1.68149223463ce98c7356.jpg",
+    "static/media/logo.jpg": "/fashion/static/media/logo.878069e41183927ac8f5.jpg",
+    "index.html": "/fashion/index.html",
+    "main.8a5b2d6e.css.map": "/fashion/static/css/main.8a5b2d6e.css.map",
+    "main.4b914b56.js.map": "/fashion/static/js/main.4b914b56.js.map",
+    "672.a7c65c38.chunk.css.map": "/fashion/static/css/672.a7c65c38.chunk.css.map",
+    "672.8a7835cc.chunk.js.map": "/fashion/static/js/672.8a7835cc.chunk.js.map",
+    "903.2d8f6ca9.chunk.js.map": "/fashion/static/js/903.2d8f6ca9.chunk.js.map",
+    "497.e5cfc96c.chunk.js.map": "/fashion/static/js/497.e5cfc96c.chunk.js.map",
+    "898.e019a85a.chunk.js.map": "/fashion/static/js/898.e019a85a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8a5b2d6e.css",
-    "static/js/main.d4d81c92.js"
+    "static/js/main.4b914b56.js"
   ]
 }
