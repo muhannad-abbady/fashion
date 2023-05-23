@@ -38,6 +38,7 @@ const Router = () => {
                     <ScrollToTop />
                     <Routes>
                         <Route path='/' element={<Homepage />} />
+                        <Route path='/fashion' element={<Homepage />} />
                         <Route path='/:id' element={<PP />} />
                     </Routes>
                 </Suspense>
