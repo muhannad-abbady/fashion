@@ -2,17 +2,15 @@ import { Box, Button, CircularProgress, Grid, Rating } from "@mui/material";
 import PriceBox from "../price-box/priceBox";
 import StockStatus from "../stock-status/stockStatus";
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
-import { useGlobalStore } from "../../stores/globalStore.ts"
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { useSnackbar } from "notistack";
 import styles from './productCard.module.scss'
 import cssVars from '../../styles/vars.module.scss'
-import { parseRating } from "../../helpers/parseRating";
 
 const ProductCardBottom = ({ product }) => {
     const t = (word) => word
 
-    const openMiniCart = useGlobalStore((state) => state.openMiniCart)
+    const openMiniCart = () => { }
 
     const [addToCartLoading, setAddToCartLoading] = useState(false)
     const { enqueueSnackbar } = useSnackbar()
