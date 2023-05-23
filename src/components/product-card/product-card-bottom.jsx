@@ -3,7 +3,6 @@ import PriceBox from "../price-box/priceBox";
 import StockStatus from "../stock-status/stockStatus";
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 import { useState } from "react";
-import { useSnackbar } from "notistack";
 import styles from './productCard.module.scss'
 import cssVars from '../../styles/vars.module.scss'
 
@@ -13,7 +12,7 @@ const ProductCardBottom = ({ product }) => {
     const openMiniCart = () => { }
 
     const [addToCartLoading, setAddToCartLoading] = useState(false)
-    const { enqueueSnackbar } = useSnackbar()
+    const enqueueSnackbar = () => { }
 
 
     return (
