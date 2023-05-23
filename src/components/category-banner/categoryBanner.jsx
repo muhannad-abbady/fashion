@@ -28,7 +28,7 @@ const CategoryBanner = ({ data = [] }) => {
                             justifyContent: { xs: "center", md: "start" },
                             padding: { xs: "10px", md: '20px' },
                         }}>
-                            <Box component="h4" color="#fff" sx={{ fontFamily: "system-ui" }}>{item.title}</Box>
+                            <Box component="h3" color="#fff" sx={{ fontFamily: "cursive, system-ui" }}>{item.title}</Box>
                         </Box>
 
                     </Box>

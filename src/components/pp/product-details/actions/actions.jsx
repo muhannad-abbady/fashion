@@ -51,8 +51,9 @@ const Actions = ({ product, variant = "" }) => {
                 />
                 <Button
                     sx={{
-                        borderRadius: '25px', ml: 2, width: "calc(100% - 154px)", height: "48px !important",
+                        borderRadius: '25px', ml: 2, width: "calc(100% - 166px)", height: "48px !important",
                         bgcolor: cssVars.primary, borderColor: cssVars.primary, color: cssVars.white,
+                        fontFamily: "system-ui", fontSize: "1rem",
                         ":hover": { bgcolor: cssVars.hoverColor, borderColor: cssVars.hoverColor, color: cssVars.white }
                     }}
                     variant="outlined" color="secondary" startIcon={<LocalMallOutlinedIcon />}

@@ -63,7 +63,7 @@ const ShowBox = ({ product, variant }) => {
                             media_gallery.sort((a, b) => a.position - b.position).map((item, i) =>
                                 <Box mb="10px" width={114} height={110} position="relative" key={item?.image} border={`1px solid ${cssVars.lightGray}`}
                                     borderBottom={`1px solid ${cssVars.lightGray}`}
-                                    sx={{ cursor: "pointer", position: "relative", "&::after": (i === activeImg ? afterEffect : {}) }}
+                                    sx={{ cursor: "pointer", position: "relative", p: "5px", boxSizing: "border-box", "&::after": (i === activeImg ? afterEffect : {}) }}
                                     onClick={() => { setActiveImg(i) }}
                                 >
                                     <img id={`oi-${i}`} src={item?.image} alt={item?.title} style={{ objectFit: "contain", objectPosition: "center", width: "100%", height: "100%" }} />
@@ -86,7 +86,7 @@ const ShowBox = ({ product, variant }) => {
                 width={{ xs: "100%", md: "calc(100% - 128px)" }}
                 position="relative"
                 height="500px"
-                style={{ border: `1px solid ${cssVars.lightGray}` }}
+                style={{ border: 'none' }}
                 sx={{ display: { xs: 'none', lg: "flex" }, justifyContent: "center", alignItems: "center" }}>
                 <Magnify >
                     <img src={product?.image} alt={product?.title} />

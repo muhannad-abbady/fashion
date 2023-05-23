@@ -31,7 +31,7 @@ const ProductCardBottom = ({ product }) => {
                 </Box>
             </Grid>
             <Rating sx={{ mb: { xs: "0px", md: "0px" } }} size={"small"} name="read-only" value={product?.rating.rate} readOnly precision={0.1} />
-            <Box my={{ xs: 1, md: 2 }} className={styles.name} height={{ sm: 48 }}>{product?.title}</Box>
+            <Box my={{ xs: 1, md: 1 }} className={styles.name} height={{ sm: 44 }}>{product?.title}</Box>
             <Grid my={{ xs: 1, md: 2 }} display="flex" alignItems="center" justifyContent="space-between">
                 <PriceBox product={product} sx={{ fontSize: { xs: "14px", md: "15px" } }} />
                 <StockStatus product={product} />
